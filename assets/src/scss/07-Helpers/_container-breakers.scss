@@ -1,0 +1,34 @@
+.h-full-width--left {
+    width: 54vw;
+    position: absolute;
+    margin-left: -50vw;
+    left: 50%;
+
+    @include media-breakpoint-down(md) {
+        left: 0;
+        margin-left: 0;
+        width: 100vw;
+        position: relative;
+    }
+}
+
+.h-full-width--right {
+    width: 50vw;
+    position: relative;
+    margin-right: -50vw;
+    right: -84px;
+
+    @include media-breakpoint-down(lg) {
+        right: -68px;
+    }
+
+    @include media-breakpoint-down(md) {
+        right: 0;
+        margin-right: 0;
+        width: 100vw;
+    }
+}
+
+.h-full-width--60vw {
+    width: 60vw;
+}

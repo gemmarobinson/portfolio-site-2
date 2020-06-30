@@ -1,0 +1,107 @@
+/* ------------------------------------
+	# IMPORTS
+-------------------------------------- */
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/animate.css/animate";
+@import "node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-pro/scss/regular";
+@import "node_modules/@fortawesome/fontawesome-pro/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-pro/scss/light";
+@import "node_modules/@fortawesome/fontawesome-pro/scss/brands";
+@import "vendor/slick";
+
+/* ------------------------------------
+	# 01-MIXINS
+-------------------------------------- */
+
+@import "01-Mixins/color";
+
+/* ------------------------------------
+	# 02-SETTINGS
+-------------------------------------- */
+
+@import "02-Settings/variables";
+@import "02-Settings/reset";
+
+/* ------------------------------------
+	# 03-BASE
+-------------------------------------- */
+
+@import "03-Base/wp-login";
+@import "03-Base/wp-core";
+@import "03-Base/typography";
+@import "03-Base/forms";
+
+/* ------------------------------------
+	# 04-Icons
+-------------------------------------- */
+
+// @import '04-Icons/example';
+
+/* ------------------------------------
+	# 05-Objects
+-------------------------------------- */
+
+// @import '05-Objects/example';
+
+/* ------------------------------------
+	# 06-COMPONENTS
+-------------------------------------- */
+
+@import "06-Components/header";
+@import "06-Components/menu-toggle";
+@import "06-Components/menu";
+@import "06-Components/footer";
+@import "06-Components/buttons";
+@import "06-Components/homepage-header";
+@import "06-Components/homepage-block";
+@import "06-Components/homepage-projects";
+@import "06-Components/homepage-awards";
+@import "06-Components/contact-block";
+@import "06-Components/about-hero";
+@import "06-Components/green-line";
+@import "06-Components/process";
+@import "06-Components/testimonials";
+@import "06-Components/services-hero";
+@import "06-Components/services-overview";
+@import "06-Components/services-card";
+@import "06-Components/projects-intro";
+@import "06-Components/project-card";
+@import "06-Components/category-filters";
+@import "06-Components/list";
+@import "06-Components/four-oh-four";
+@import "06-Components/default";
+@import "06-Components/news-socials";
+@import "06-Components/news-card";
+@import "06-Components/instagram";
+@import "06-Components/cta";
+@import "06-Components/single-project";
+@import "06-Components/portfolio-block";
+@import "06-Components/service";
+@import "06-Components/post";
+@import "06-Components/contact";
+@import "06-Components/careers";
+@import "06-Components/wpcf7-popup";
+@import "06-Components/pagination";
+@import "06-Components/talent";
+@import "06-Components/team";
+@import "06-Components/team-slider";
+
+/* ------------------------------------
+	# 07-HELPERS
+-------------------------------------- */
+
+@import "07-Helpers/accessibility";
+@import "07-Helpers/typography";
+@import "07-Helpers/backgrounds";
+@import "07-Helpers/colors";
+@import "07-Helpers/sizes";
+@import "07-Helpers/spacers";
+@import "07-Helpers/borders";
+@import "07-Helpers/image-offset";
+@import "07-Helpers/ordering";
+@import "07-Helpers/container-breakers";
+@import "07-Helpers/wraps";
+@import "07-Helpers/lines";
+@import "07-Helpers/underline";
+@import "07-Helpers/overflow";

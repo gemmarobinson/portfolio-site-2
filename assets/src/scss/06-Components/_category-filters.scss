@@ -1,0 +1,48 @@
+.c-category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 0 50px 0;
+
+    @include media-breakpoint-down(xs) {
+        flex-direction: column;
+        margin: 30px 0 0 0;
+    }
+}
+
+    .c-category-filters__single {
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0.41px;
+        color: color(gray, 600);
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        &.active {
+            color: color(navy, 500);
+
+            @include media-breakpoint-down(xs) {
+                text-decoration: underline;
+            }
+
+            
+            &:after {
+                content: '';
+                height: 1px;
+                width: 100%;
+                background-color: color(navy, 500);
+                display: block;
+
+                @include media-breakpoint-down(xs) {
+                    display: none;
+                }
+            }
+        }
+
+        &.all { order: -1; }
+        &.private-gardens { order: 2; }
+        &.large-private-gardens { order: 3; }
+        &.show-gardens { order: 4; }
+        &.schools { order: 5; }
+        &.commercial { order: 6; }
+    }

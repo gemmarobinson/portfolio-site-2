@@ -1,0 +1,52 @@
+.c-team {
+	@include media-breakpoint-up(md) {
+	    padding: 70px 100px 0;
+	}
+}
+	
+	.c-team__border-right {
+		@include media-breakpoint-up(lg) {
+		    width: 1px;
+		    position: absolute;
+		    top: -100px;
+		    right: -30px;
+		    bottom: 0;
+		    background-color: color(gray, 400);
+		    z-index: -2;
+		}
+	}
+
+	.c-team__vertical-text {
+		display: none;
+
+		@include media-breakpoint-up(md) {
+			display: block;
+	        writing-mode: vertical-rl;
+	        position: absolute;
+	        top: 0;
+	        bottom: 0;
+		    right: -85px;
+		    text-align: center;
+		}
+	}
+
+	.c-team__inner {
+		padding-bottom: 92px;
+
+		@include media-breakpoint-down(sm) {
+			padding-bottom: 40px;
+		}
+	}  
+
+		.c-team__card {
+		    margin-top: 92px;
+
+    		@include media-breakpoint-down(sm) {
+				margin-top: 40px;
+			}
+		}
+	
+
+	.c-team__cta {
+		margin: 125px 0;
+	}

@@ -1,0 +1,105 @@
+.c-contact__title {
+    padding: 170px 0;
+    background-color: color(navy, 500);
+
+    @include media-breakpoint-down(sm) {      
+        padding: 100px 15px 50px 15px;
+    }
+
+    h1, .h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    a {
+        @include media-breakpoint-down(sm) {      
+            font-size: 18px;
+        }    
+    }
+}
+
+.c-contact__socials {
+    background-color: color(navy, 500);
+    padding: 0 0 70px 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        li a {
+            color: color(green, 500);
+            font-size: 20px;
+            padding: 0 25px;
+
+            &:hover {
+                color: white;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.c-contact__anchor-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: -54px;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    p {
+        max-width: 120px;
+        line-height: 1.5;
+        margin: 0 0 0 15px;
+    }
+}
+
+.c-contact__address {
+    position: relative;
+    margin: 97px 0 0 0;
+
+    @include media-breakpoint-down(sm) {
+        margin: 40px 0 0 0;
+    }
+
+    address {
+        font-size: 16px;
+        line-height: 1.69;
+        letter-spacing: -0.1px;
+        color: color(navy, 500);
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        right: -55px;
+        bottom: 40px;
+        left: -55px;
+        z-index: -1;
+        background-color: #fafafa;
+        background-image: url('../images/contact-drawing.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+.c-contact__form {
+    margin: 96px 0 144px 0;
+
+    @include media-breakpoint-down(sm) {
+        margin: 40px 0 80px 0;
+    }
+}

@@ -1,0 +1,28 @@
+.c-process__image {
+    height: 1119px;
+    background-color: color(gray, 400);
+}
+
+.c-process__line {
+    height: 138px;     
+    margin-left: auto;
+    margin-right: 88px;
+}
+
+.c-process__title {
+    @include media-breakpoint-down(md) {
+        order: -1;
+    }
+}
+
+.c-process__steps {
+    @include media-breakpoint-down(md) {
+        padding: 0 55px 55px 55px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 0 0 55px;
+        margin-top: 20px;
+        border-top: 1px solid color(gray, 400);
+    }
+}

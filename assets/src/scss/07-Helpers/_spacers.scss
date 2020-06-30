@@ -1,0 +1,64 @@
+.h-pt-225px {
+    padding-top: 225px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 40px;
+    }
+}
+
+.h-pb-225px {
+    padding-bottom: 225px;
+}
+
+.h-pt-127px {
+    padding-top: 127px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 40px;
+    }
+}
+
+.h-pt-85px {
+    padding-top: 85px;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 40px;
+    }
+}
+
+.h-pt-35px {
+    padding-top: 35px;
+}
+
+.h-mb-34px {
+    margin-bottom: 34px;
+}
+
+.h-mb-85px {
+    margin-bottom: 85px;
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 40px;
+    }
+}
+
+
+.h-p-5px {
+    padding: 5px;
+}
+
+.h-m-textblock--small {
+    margin: 100px 0 125px;
+
+    @include media-breakpoint-down(md) {
+        margin: 0 0 80px 0;
+    }
+}
+
+.h-my-130px {
+    margin: 130px 0;
+
+    @include media-breakpoint-down(sm) {
+        margin: 70px 0;
+    }
+}

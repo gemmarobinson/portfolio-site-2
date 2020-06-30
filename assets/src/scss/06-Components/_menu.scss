@@ -1,0 +1,118 @@
+// for body and html tags when menu is open
+.menu-open {
+    overflow: hidden;
+}
+
+
+
+.c-menu {
+    position: fixed;
+    background-color: color(navy, 500);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100vh);
+    z-index: 12;
+    transition: all 0.5s ease-in;
+    transition: 1s ease-out;
+    overflow: hidden;
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    #menu-main-menu {
+        list-style: none;
+        padding: 0 0 30px 0;
+        margin: 0;
+
+        .menu-item {
+
+            a {
+                display: block;
+                color: color(white, 600);
+                font-size: 28px;
+                padding-bottom: 20px;
+                line-height: 1.43;
+                letter-spacing: 0.28px;
+                font-weight: 500;
+                font-family: $h1-font-family;
+                transition: 0.3s ease;
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                }
+
+                &:hover, &:focus, &:active {
+                        color: color(green, 500);
+                        text-decoration: none;
+                }
+            }
+
+            &:hover, &:focus, &:active {
+                a {
+                    color: color(green, 500);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+    .c-menu__legal {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            color: color(white, 600);
+            margin-right: 40px;
+        }
+    }
+
+    .c-menu__social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        li {
+            margin-left: 40px;
+
+            a {
+                i {
+                    color: color(white, 600);
+                    font-size: 20px;
+                    transition: 0.3s ease;
+                }
+            }
+
+            &:hover {
+                a {
+                    i {
+                        color: color(green, 500);
+                    }
+                }
+            }
+        }
+    }
+
+    .c-menu--mobile {
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            top: 75px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    }

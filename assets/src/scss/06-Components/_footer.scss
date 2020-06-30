@@ -1,0 +1,56 @@
+/**
+ *
+ * Name: Footer
+ * Description: 
+ * State: Red
+ */
+
+.c-footer {
+    background-color: color(navy, 500);
+    padding: 57px 0 47px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 30px 0;
+    }
+}
+
+    .c-footer__socials {
+        margin: 0 0 35px 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            color: color(white, 500);
+            padding: 0 25px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .c-footer__menu {
+        padding: 0;
+        list-style: none;
+        margin: 25px 0 0 0;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 37px 0 0 0;
+        }
+
+        li {
+            color: color(white, 500);
+            padding: 0 20px;
+
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+    }

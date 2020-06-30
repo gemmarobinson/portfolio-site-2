@@ -1,0 +1,159 @@
+/*------------------------------------
+Forms
+------------------------------------*/
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid color(navy, 500);
+  height: 34px;
+  font-size: 18px;
+  color: color(navy, 500);
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+
+  &::placeholder {
+    color: color(navy, 500);
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: color(navy, 500);
+  }
+
+  &::-ms-input-placeholder {
+    color: color(navy, 500);
+  }
+
+  &:focus {
+    outline: none;
+
+    &::placeholder {
+      color: color(gray, 500);
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: color(gray, 500);
+    }
+
+    &::-ms-input-placeholder {
+      color: color(gray, 500);
+    }
+  }
+}
+
+input[type="submit"] {
+  border-radius: 0;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: color(navy, 500);
+  background-color: color(white, 500);
+  height: 34px;
+  font-size: 18px;
+  width: 214px;
+  color: color(navy, 500);
+  transition: 0.5s ease;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: color(navy, 500);
+    color: color(white, 500);
+  }
+}
+
+.h-input-wrap {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+
+  span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+    z-index: 1;
+
+    @include media-breakpoint-up(lg) {
+      right: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    @include media-breakpoint-only(md) {
+      top: 0;
+      bottom: -65px;
+      left: 0;
+      right: auto;
+      position: absolute;
+    }
+  }
+
+  &.textarea-wrap {
+    position: relative;
+    width: 100%;
+    margin: 8px 0 0 0;
+
+    &:before {
+      content: "";
+      width: 128px;
+      height: 128px;
+      background-color: color(green, 500);
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      z-index: -1;
+    }
+
+    span.wpcf7-not-valid-tip {
+      left: 0;
+      right: auto;
+      bottom: -30px;
+      top: auto;
+
+      @include media-breakpoint-down(md) {
+        position: absolute;
+      }
+
+      @include media-breakpoint-down(xs) {
+        bottom: -65px;
+      }
+    }
+  }
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid color(navy, 500);
+  height: 310px;
+  resize: none;
+  padding: 15px 23px;
+  font-size: 18px;
+  color: color(navy, 500);
+  display: block;
+  margin: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.wpcf7-response-output {
+  margin: 50px 0 0 0 !important;
+  padding: 10px 15px !important;
+  color: color(navy, 500);
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}

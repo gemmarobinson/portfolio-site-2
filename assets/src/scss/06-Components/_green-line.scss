@@ -1,0 +1,12 @@
+.c-green-line {
+    width: 576px;
+    height: 13px;
+    background-color: #6ee5ac;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+    }
+}

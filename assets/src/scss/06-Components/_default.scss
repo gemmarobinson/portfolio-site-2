@@ -1,0 +1,88 @@
+.c-default {
+    table {
+        border: 2px solid color(gray, 600);
+        table-layout: fixed;
+        margin-bottom: 42px;
+        overflow-x: scroll;
+
+        @include media-breakpoint-down(sm) {
+            table-layout: auto;
+            width: 100%;
+            display: block;
+            overflow-x: scroll;
+        }
+
+        tbody {
+            tr {
+                th, td {
+                    vertical-align: top;
+                    border: 2px solid color(gray, 600);
+                    padding: 10px;
+                }
+
+                &:first-child {
+                    th {
+                        color: color(navy, 500);
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .c-default__header {
+        background-color: color(navy, 500);
+        height: 355px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 90px;
+
+        @include media-breakpoint-down(md) {
+            height: 200px;
+            padding-bottom: 50px;
+        }
+    }
+
+    .c-default__content {
+        background-color: #fafafa;
+    }
+
+    .c-default__section {      
+        background-color: color(white, 500);
+        margin-bottom: 96px;
+        position: relative;
+        z-index: 2;
+        padding: 60px 120px 30px 120px;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        &:first-of-type {
+            margin-top: -90px;
+            border-top: 12px solid #6ee5ac;
+
+            @include media-breakpoint-down(md) {
+                margin-top: -50px;
+            }
+        }
+
+        h3, h4, h5, h6 {
+            font-family: azo-sans-web, sans-serif;
+            font-size: 22px;
+            line-height: 1.82;
+            letter-spacing: 0.22px;
+            margin-top: 35px;
+        }
+    }
+
+    .c-default__heading {
+        padding-bottom: 40px;
+        border-bottom: 1px solid color(gray, 400);
+
+        @include media-breakpoint-down(md) {
+            padding-bottom: 20px;
+        }
+    }

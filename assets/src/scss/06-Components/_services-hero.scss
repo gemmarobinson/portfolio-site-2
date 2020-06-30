@@ -1,0 +1,25 @@
+.c-services-hero {
+    padding-bottom: 100px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 40px 0 0 0;
+    }
+}
+    .c-services-hero__title {
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 1px;
+            background-color: color(gray, 400);
+            width: 800px;
+            position: absolute;
+            top: 30px;
+            left: -825px;
+        }
+    }
+
+    .c-services-hero__image {
+        height: 505px;
+        border-bottom: 39px solid color(white, 600);
+    }

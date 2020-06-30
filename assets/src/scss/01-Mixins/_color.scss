@@ -1,0 +1,14 @@
+/**
+ *
+ * Name: Colors
+ * Description: Color mixin to get a color from nested map in `01-settings/_colors.scss`
+ * State: Green
+ */
+
+@function color($color-name, $color-variant:null) {
+	@if ($color-variant != null) {
+		@return map-get(map-get($colors, $color-name), $color-variant);
+	} @else {
+		@return map-get($colors, $color-name);
+	}
+}

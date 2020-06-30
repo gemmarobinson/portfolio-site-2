@@ -1,0 +1,89 @@
+.c-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+
+    .c-hamburger {
+        height: 20px;
+        width: 32px;
+        transform: rotate(180deg);
+
+        .c-hamburger__line {
+            width: 25px;
+            height: 2px;
+            background-color: color(white, 500); 
+            width: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -5px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 100%;
+                background-color: color(white, 500);
+                width: 10px;
+                left: 5px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 100%;
+                background-color: color(white, 500);
+                width: 25px;
+                left: 12.5px;
+            }
+        }
+    }
+
+    &.c-menu-toggle--close {
+
+        .c-hamburger {
+
+            .c-hamburger__line {
+                background-color: transparent !important;
+
+                &:before {
+                    top: 0;
+                    left: -4px;
+                    width: 25px;
+                    transform: rotate(45deg);
+                }
+
+                &:after {
+                    top: 0;
+                    left: -4px;
+                    width: 25px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+header.stuck {
+    .c-menu-toggle {
+        color: color(navy, 500);
+
+        .c-hamburger {
+
+            .c-hamburger__line {
+                background-color: color(navy, 500);
+
+                &:before, &:after {
+                    background-color: color(navy, 500);
+                }
+            }
+        }
+    }
+}

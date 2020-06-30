@@ -1,0 +1,19 @@
+.c-cta {
+    margin: 157px 0 183px 0;
+
+    @include media-breakpoint-down(md) {
+        margin: 100px 0;
+    }
+}
+
+    .c-cta__text {
+        font-size: 28px;
+        line-height: 1.43;
+        font-weight: 500;
+        letter-spacing: .3px;
+        font-family: azo-sans-web,sans-serif;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    }

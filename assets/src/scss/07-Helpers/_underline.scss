@@ -1,0 +1,49 @@
+.h-underline {
+    position: relative;
+    display: inline-flex;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 1px;
+        background-color: #01013a;
+        position: absolute;
+        left: 0;
+        bottom: 6px;
+    }
+}
+    .h-underline--right {
+        &:after {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    .h-underline--top {
+        &:after {
+            bottom: auto;
+            top: 0;
+            left: 3px;
+        }
+    }
+
+    .h-underline--middle {
+        &:after {
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    .h-underline--long {
+        &:after {
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    .h-underline--gold {
+        &:after {
+            background-color: color(bronze, 500);
+        }
+    }

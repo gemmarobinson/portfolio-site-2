@@ -1,0 +1,17 @@
+.h-image-offset {
+    position: relative;
+
+    .h-image-offset__inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -39px;
+        left: -39px;
+        background-color: color(white, 600);
+        z-index: -1;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}

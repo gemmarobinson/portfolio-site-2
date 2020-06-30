@@ -1,0 +1,39 @@
+@include media-breakpoint-up(md) { 
+    .h-border-bottom {
+        border-bottom: 1px solid color(gray, 400);
+    }
+
+    .h-border-top {
+        border-top: 1px solid color(gray, 400);
+    }
+
+    .h-border-left {
+        border-left: 1px solid color(gray, 400);
+    }
+
+    .h-border-right {
+        border-right: 1px solid color(gray, 400);
+    }
+
+    .h-border--white {
+        border-color: #e2e2e2;
+    }
+}
+
+.h-border-bottom--permanent {
+    border-bottom: 1px solid color(gray, 400);
+}
+
+.h-border-left--permanent {
+    border-left: 1px solid color(gray, 400);
+}
+
+.h-border-right--permanent {
+    border-right: 1px solid color(gray, 400);
+}
+
+@include media-breakpoint-up(lg) { 
+    .h-border-lg-left {
+        border-left: 1px solid color(gray, 400);        
+    }
+}

@@ -1,0 +1,64 @@
+.c-careers {
+    padding: 100px 0 74px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 0px 0 30px 0;
+    }
+}
+    .c-careers__image {
+        @include media-breakpoint-down(md) {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            margin-bottom: 30px;
+        }
+    }
+
+    .c-careers__contact-text {
+        position: relative;
+        margin: 141px 0 88px 0;
+
+        @include media-breakpoint-down(sm) {
+            margin: 50px 0 70px 0;
+            font-size: 30px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 75px;
+            left: -2000px;
+            right: -2000px;
+            height: 12px;
+            background-color: color(green, 500);
+            z-index: -1;
+            -webkit-animation-name: lineSlide; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation-name: lineSlide;
+            animation-duration: 4s;
+
+            @include media-breakpoint-down(sm) {
+                top: auto;
+                bottom: -30px;
+                animation-name: none;
+            }
+        }
+    }
+
+    .c-careers__contact {
+        margin-bottom: 84px;
+
+       @include media-breakpoint-down(sm) {
+            margin-bottom: 40px;
+        }
+    }
+
+@-webkit-keyframes lineSlide {
+    from {right: 2000px;}
+    to {right: -2000px;}
+}
+@keyframes lineSlide {
+    from {right: 2000px;}
+    to {right: -2000px;}
+}

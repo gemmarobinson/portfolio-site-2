@@ -1,0 +1,32 @@
+/*------------------------------------
+Buttons
+------------------------------------*/
+
+.c-btn {
+    font-size: 18px;
+    font-weight: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 214px;
+    height: 36px;
+    letter-spacing: 0.2px;
+    background-color: color(white, 500);
+    cursor: pointer;
+    
+    &:hover, &:focus, &:active {
+        background-color: color(navy, 500);
+        color: color(white, 500);
+    }
+}
+    .c-btn--tall {
+        height: 58px;
+    }
+
+    .c-btn--border {
+        border: 1px solid color(navy, 500);
+    }
+
+    .c-btn--transparent {
+        background-color: transparent;
+    }

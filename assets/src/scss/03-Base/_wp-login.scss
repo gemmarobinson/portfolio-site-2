@@ -1,0 +1,197 @@
+/*----------------------------------------
+WordPress Login Page
+
+To use custom fonts here, go to sixthstory_login_enqueue
+in /includes/wordpress-core-changes.php and enqueue the font
+as you would in the standard template.
+----------------------------------------*/
+
+$form_bg_color: #01013a;
+
+body.login{
+	background-color: white;
+	font-weight: normal;
+
+	.message {
+		border-left: 4px solid #6ee5ac;
+		color: white;
+		box-shadow: none;
+		font-size: 0.9em;
+        background-color: $form_bg_color;
+
+		&.reset-pass{
+			margin-bottom: 0 !important;
+		}
+	}
+
+	#login_error{
+		font-size: 0.9em;
+		box-shadow: none;
+	}
+
+	div#login{
+	// Logo
+		h1 {
+			a {
+				background: url('../images/main-logo.png') no-repeat;
+				background-position: center;
+				background-size: contain;
+				width: 100%;
+                max-width: 200px;
+			}
+		}
+
+	// Actual login div
+
+		form#loginform,
+		form#passwordform,
+		form#lostpasswordform,
+		form#resetpassform{
+			background: $form_bg_color;
+			box-shadow: none;
+    		padding: 26px 24px 24px;
+
+    		label[for=user_login],
+    		label[for=user_pass]{
+				font-size: 0.85em;
+				color: white;
+				display: block;
+    		}
+
+    		input[type=text],
+    		input[type=password]{
+				background: white;
+				box-shadow: none;
+				border-radius: 0;
+				border: 1px solid transparent;
+				font-size: 1.35em;
+				font-weight: normal;
+				padding: 0 10px;
+				height: 45px;
+				width: 100%;
+				display: block;
+                color: #01013a;
+				
+
+				&:focus{
+					border: 1px solid #6ee5ac;
+				}
+    		}
+
+    		input[type=submit]{
+    			border-radius: 0;
+    			border: 0;
+    			font-size: 1em;
+    			line-height: 1;
+    			text-shadow: none;
+    			box-shadow: none;
+    			font-weight: bold;
+    			height: 45px;
+    			padding: 12px 30px;
+    			background-color: #6ee5ac;
+                transition: 0.5s ease-out;
+				
+
+    			&:hover,
+    			&:focus,
+    			&:active{
+					background-color: white;
+                    color: #01013a;
+    			}
+
+				&[value='Log In']{ }
+
+				&[value='Get New Password']{
+					width: 100%;
+				}
+
+				&[value='Reset Password']{
+					width: 100%;
+				}
+
+    		}
+
+			p.forgetmenot {
+				height: 45px;
+				display: flex;
+				align-items: center;
+
+                label {
+                    color: white;
+                }
+
+				input[type=checkbox] {
+                    position: relative;
+                    margin-top: 0;
+                    display: inline-block;
+
+					&:focus {
+						border-bottom: none;
+					}
+
+                    &:checked {
+						&:before {
+							line-height: 22px;
+						    font-size: 22px;
+						    color: #696969;
+						}
+                    }
+				}
+			}
+		}
+
+		form#resetpassform{
+			.wp-pwd{
+				#pass-strength-result{
+					font-size: 0.9em;
+				}
+
+				// Hidden by default password field on 'Reset Password'
+	    		.show-password #pass1 {
+					display: none;
+	    		}
+			}
+
+			p.indicator-hint{
+				font-size: 0.9em;
+			}
+		}
+
+		// 'Back to Blog' and 'Lost Your Password'
+		p#nav{
+			background: $form_bg_color;
+			margin: 0;
+			padding: 10px 24px 0 24px;
+			font-size: 0.85em;
+            
+            a {
+                color: white;
+
+                &:hover {
+                    color: #6ee5ac;
+                }
+
+            }
+		}
+
+		p#backtoblog{
+			background: $form_bg_color;
+			margin: 0;
+			padding: 24px 24px 24px 24px;
+			font-size: 0.85em;
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: #6ee5ac;
+                }
+
+            }
+		}
+
+        a.privacy-policy-link {
+            display: none;
+        }
+	}
+}

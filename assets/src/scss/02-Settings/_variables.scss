@@ -1,0 +1,111 @@
+/**
+ *
+ * Name: Variables
+ * Description: 
+ * State: Red
+ */
+
+/* ------------------------------------
+  # GENERAL
+-------------------------------------- */
+
+    // Required if using the background helpers
+    $overlay-background-colour: rgba(0, 0, 0, 0.5);
+    $overlay-gradient-colour: "{{ Linear RGBA Gradient }}";
+
+
+
+/*----------------------------------------
+  # Typography
+----------------------------------------*/
+    
+    $headings-color: #01013A;
+    
+    // H1
+    $h1-font-size: 40px;
+    $h1-line-height: 1.28;
+    $h1-font-weight: 500;
+    $h1-letter-spacing: 0.4px;
+    $h1-font-family: azo-sans-web, sans-serif;
+
+    // @include media-breakpoint-down(md) {
+    //     $h1-font-size: 32px;
+    //     $h1-line-height: 1.25;
+    // }
+
+
+    // H2
+    $h2-font-size: 28px;
+    $h2-line-height: 1.43;
+    $h2-font-weight: 500;
+    $h2-letter-spacing: 0.3px;
+    $h2-font-family: azo-sans-web, sans-serif;
+
+    // @include media-breakpoint-down(md) {
+    //     $h2-font-size: 22px;
+    //     $h2-line-height: 1.45;
+    // }
+
+
+    // h3
+    $h3-font-size: 18px;
+    $h3-line-height: 2.33;
+    $h3-font-weight: 400;
+    $h3-letter-spacing: 0.4px;
+    $h3-font-family: futura-pt, sans-serif;
+
+    // @include media-breakpoint-down(md) {
+    //     $h3-font-size: 16px;
+    //     $h3-line-height: 42px;
+    // }
+
+
+
+    // Paragraph 
+    $paragraph-size: 16px;
+    $paragraph-line-height: 1.69;
+    $paragraph-color: #07073F;
+    $paragraph-font-weight: 400;
+    $paragraph-font-family: futura-pt, sans-serif;
+
+
+    $small-paragraph-size: 12px;
+
+    // @include media-breakpoint-down(md) {
+    //     $small-paragraph-size: 12px;
+    // }
+
+
+
+
+/*----------------------------------------
+  # Colours
+----------------------------------------*/
+    
+    $colors: (
+        white: (
+            500: #ffffff,
+            600: #f1f1f1,
+        ),
+        gray: (
+            300: #FBFBFB,
+            400: #D8D8D8,
+            500: #D4D4D4,
+            600: #A7A7A7,
+        ),
+        navy: (
+            500: #01013A,
+        ),
+        bronze: (
+            500: #B79947,
+        ),
+        green: (
+            500: #6EE5AC,
+        ),
+        error: (
+            500: #D0021B,
+        ),
+        success: (
+            500: #56DEA3,
+        ),
+    );

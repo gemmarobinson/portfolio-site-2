@@ -1,0 +1,35 @@
+.h-line-vertical {
+    width: 1px;
+    background-color: color(gray, 400);
+}
+
+    .h-line-vertical--mr-55px {
+        margin-right: 55px;
+    }
+
+.h-line-horizontal {
+    height: 1px;
+    background-color: color(gray, 400);
+}
+
+    .h-line-horizontal--bottom-left {
+        position: absolute;
+        bottom: 0;
+        right: 55px;
+        left: -700px;
+    }
+
+    .h-line-horizontal--top-left {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: -700px;
+    }
+
+    .h-line-horizontal--right-5px {
+        right: 5px;
+    }
+
+    .h-line-horizontal--right-n30px {
+        right: -30px;
+    }

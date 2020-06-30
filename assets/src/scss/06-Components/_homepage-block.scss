@@ -1,0 +1,19 @@
+.c-homepage-block {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 500px;
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+        height: 250px;
+    }
+}
+
+    .c-homepage-block__lines {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }

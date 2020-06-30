@@ -1,0 +1,101 @@
+.c-homepage-header {
+    height: 100vh;
+    position: relative;
+    padding: 0 15px;
+
+    @include media-breakpoint-down(sm) {
+        background-image: url('../images/homepage-header-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: color(navy, 500);
+    }
+
+
+    @include media-breakpoint-down(xs) {
+        height: calc(100vh - 50px);
+    }
+
+    .c-homepage-header__video-wrap {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            min-height: 50%;
+            min-width: 50%;
+        }
+    }
+}
+    .c-homepage-header--animation {
+        position: absolute;
+        right: 0;
+        top: -100vh;
+        height: 100vh;
+        left: 0;
+        background-color: black;
+        z-index: 11;
+        -webkit-animation-name: headerAnimate; 
+        -webkit-animation-duration: 3s; 
+        animation-name: headerAnimate;
+        animation-duration: 3s;
+
+        @include media-breakpoint-down(sm) {
+            animation-name: none;
+        }
+    }
+
+
+    .c-homepage-header__btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .c-homepage-header__title {
+        font-size: 60px;
+        width: 100%;
+        max-width: 565px;
+
+        @media only screen and (max-width: 1440px) {
+            font-size: 40px;
+            max-width: 480px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            max-width: 510px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 30px;
+            max-width: 300px;
+        }
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes headerAnimate {
+    from { top: 0; }
+    to { top: -100vh;}
+}
+
+/* Standard syntax */
+@keyframes headerAnimate {
+    from { top: 0; }
+    to { top: -100vh;}
+}

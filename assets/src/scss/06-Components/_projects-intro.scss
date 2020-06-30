@@ -1,0 +1,59 @@
+.c-projects-intro {
+    position: relative;
+}
+
+    .c-projects-intro__grey-background {
+        height: 195px;
+        background-color: color(white, 600);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: -2;
+
+        @include media-breakpoint-down(sm) {
+            height: 120px;
+        }
+    }
+
+    .c-projects-intro__title {
+        margin-top: 110px;
+        position: relative;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 36px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            margin-top: 70px;
+        }
+
+        &:after {
+            content: "";
+            width: 2000px;
+            height: 12px;
+            background-color: #6ee5ac;
+            position: absolute;
+            left: -20px;
+            top: 51%;
+            z-index: -1;
+            -webkit-animation-name: lineDraw; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation-name: lineDraw;
+            animation-duration: 4s;
+
+            @include media-breakpoint-down(sm) {
+                animation-name: none;
+            }
+        }
+    }
+
+
+@-webkit-keyframes lineDraw {
+    from {width: 1px;}
+    to {width: 2000px;}
+}
+@keyframes lineDraw {
+    from {width: 1px;}
+    to {width: 2000px;}
+}

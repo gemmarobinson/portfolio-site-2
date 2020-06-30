@@ -1,0 +1,19 @@
+header {
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+
+    &.stuck {
+        background-color: white;
+        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
+    }
+}
+    .c-header__logo {
+        width: 145px;
+    }

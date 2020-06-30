@@ -1,0 +1,59 @@
+/**
+ *
+ * Name: Backgrounds
+ * Description: 
+ * State: Red
+ *
+ */
+
+	.h-background-block {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+		.h-background-block--right {
+			background-position: right center;
+		}
+
+		.h-background-block--bottom {
+			background-position: bottom center;
+		}
+
+	.h-overlay {
+		left: 	0;
+		top: 	0;
+		right: 	0;
+		bottom: 0;
+		background-color: rgba(1, 1, 58, 0.3);
+		position: absolute;
+
+		@include media-breakpoint-down(sm) {
+			background-color: rgba(1, 1, 58, 0.5);
+		}
+		
+
+		&--gradient {
+			background-color: $overlay-background-colour;
+			background: $overlay-gradient-colour;
+		}
+	}
+
+	
+
+	.h-bg--black {
+		background-color: black;
+	}
+
+	@include media-breakpoint-up(md) {
+		.h-bg--grey-drawing-top-left {
+		    background-image: url('../images/home-drawing-top.svg');
+		    background-repeat: no-repeat;
+		    background-position: top left;
+		}
+
+		.h-bg--grey-drawing-top-right {
+		    background-image: url('../images/home-drawing-bottom.svg');
+		    background-repeat: no-repeat;
+		    background-position: top right;
+		}
+	}

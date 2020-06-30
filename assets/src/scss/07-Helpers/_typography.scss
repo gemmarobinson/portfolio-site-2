@@ -1,0 +1,49 @@
+	.h-font-rosa {
+        font-family: ropa-sans-pro, sans-serif;
+        font-weight: 300;
+        line-height: 2.63;
+    }
+    
+    .h-font-futura {
+        font-family: $paragraph-font-family;
+    }
+
+    .h-font-azo {
+        font-family: azo-sans-web, sans-serif;
+    }
+
+    .h-vertical-text {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+
+    .h-line-height-small {
+        line-height: 1.6;
+    }
+
+    .c-title--news {
+        margin: 105px 0 60px;
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 1px;
+            background-color: color(gray, 400);
+            width: 800px;
+            position: absolute;
+            top: 30px;
+            left: -825px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin: 40px 0;
+        }
+    }
+
+    .c-title--news--top {
+        &:before { top: 18px; }
+    }
+
+    .h-letter-spacing-normal {
+        letter-spacing: 0.36px;
+    }
